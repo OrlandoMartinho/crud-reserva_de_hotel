@@ -22,7 +22,7 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
 // Processo de busca de reservas
 if (isset($_POST['search'])) {
     $search = mysqli_real_escape_string($conn, $_POST['search']);
-    $sql_search = "SELECT * FROM reservas WHERE nome LIKE '%$search%' OR email LIKE '%$search%' OR quarto LIKE '%$search%'";
+    $sql_search = "SELECT * FROM reservas WHERE nome ='$search' OR email = '$search' OR id = '$search'";
 } else {
     $sql_search = "SELECT * FROM reservas";
 }
