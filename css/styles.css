@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ca6b34;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #d66c2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.galeria img {
+    width: 30%;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form{
+    margin-top: -5vh;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-top: 5px;
+}
+/* Reset básico e configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #ca6b34;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#home .content {
+    flex: 1;
+}
+
+section#home h2 {
+    font-size: 28px; /* Aumenta o tamanho da mensagem de boas-vindas */
+}
+
+section#home p {
+    margin-top: 10vh; /* Aumenta o tamanho da mensagem de boas-vindas */
+}
+
+section#home img {
+    width: 100vw; /* Coloca a imagem à direita */
+    max-width: 30vw;
+    float: right;
+}
+
+section#home {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens em cada extremidade */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.welcome-message {
+    max-width: 50%; /* Define a largura máxima para o texto de boas-vindas */
+}
+
+.welcome-message h2 {
+    font-size: 28px; /* Tamanho do título de boas-vindas */
+    margin-bottom: 10px; /* Espaço inferior abaixo do título */
+}
+
+.welcome-message p {
+    font-size: 18px; /* Tamanho do texto de boas-vindas */
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.content img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    max-width: 400px; /* Define a largura máxima da imagem */
+    display: block; /* Remove espaços extras em volta da imagem */
+    margin-top: 20px; /* Espaço superior para separar do texto */
+}
+
+
+section#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.sobre-content {
+    flex: 1;
+}
+
+.sobre-image {
+    width: 40%; /* Define a largura da imagem */
+    margin-left: 20px; /* Adiciona margem à esquerda para separar do texto */
+}
+
+section#sobre  p{
+margin-top: 9vh;
+font-size: 1.5rem;
+}
+
+.sobre-image img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do seu contêiner */
+    display: block; /* Remove espaços extras em volta da imagem */
+}
+
+
+
+
+
+/* Estilos para o cabeçalho */
+header {
+    background: linear-gradient(to right, #ca6b34, #e68642); /* Gradiente linear para o cabeçalho */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-message {
+    max-width: 50%; /* Define a largura máxima para o texto de boas-vindas */
+}
+
+.welcome-message h2 {
+    font-size: 28px; /* Tamanho do título de boas-vindas */
+    margin-bottom: 10px; /* Espaço inferior abaixo do título */
+}
+
+.welcome-message p {
+    font-size: 18px; /* Tamanho do texto de boas-vindas */
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.content img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    max-width: 400px; /* Define a largura máxima da imagem */
+    display: block; /* Remove espaços extras em volta da imagem */
+    margin-top: 20px; /* Espaço superior para separar do texto */
+}
+
+/* Estilos para a seção "Sobre" */
+section#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+section#reserva h2{
+   margin-top: 0vh;
+   padding-top: 1vh;
+}
+
+.sobre-content {
+    flex: 1;
+}
+
+.sobre-image {
+    width: 40%; /* Define a largura da imagem */
+    margin-left: 20px; /* Adiciona margem à esquerda para separar do texto */
+}
+
+.sobre-image img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do seu contêiner */
+    display: block; /* Remove espaços extras em volta da imagem */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: linear-gradient(to right, #d66c2f, #e88045); /* Gradiente linear para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
