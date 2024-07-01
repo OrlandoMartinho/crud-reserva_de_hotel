@@ -92,6 +92,22 @@ $result = $conn->query($sql_search);
         .btn-delete:hover {
             background-color: #da190b;
         }
+        .btn-edit {
+            padding: 6px 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .btn-edit:hover {
+            background-color: #0b7dda;
+        }
+
     </style>
 </head>
 <body>
@@ -109,7 +125,7 @@ $result = $conn->query($sql_search);
         <div class="search-form">
             <form method="post" action="admin.php">
                
-                <input type="text" id="search" name="search" placeholder="Pesquisar por Nome, Email ou Tipo de Quarto">
+                <input type="text" id="search" name="search" placeholder="Pesquisar por ID,Nome, Email ou Tipo de Quarto">
                 <input type="submit" value="Buscar">
             </form>
         </div>
@@ -134,7 +150,8 @@ $result = $conn->query($sql_search);
                     echo "<td>" . $row['checkin'] . "</td>";
                     echo "<td>" . $row['checkout'] . "</td>";
                     echo "<td>" . $row['quarto'] . "</td>";
-                    echo '<td><a href="admin.php?delete=' . $row['id'] . '" class="btn-delete">Eliminar</a></td>';
+                    echo '<td><a href="admin.php?delete=' . $row['id'] . '" class="btn-delete">Eliminar</a> <a href="php/edit.php?id=' . $row['id'] . '" class="btn-edit">Editar</a></td> ';
+                   
                     echo "</tr>";
                 }
             } else {
